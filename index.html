@@ -6,10 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VOZ A TEXTO</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: monospace;
+        }
+        
+        .container {
+            background-image: url('img/voz.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #text{
+            padding: 50px;
+            border-radius: 100px;
+            background-color: rgba(255, 255, 255, 0);
+            font-size: 22px;
+            color: #fff;
+            box-shadow: 0px 0px 100px rgba(240, 3, 3, 0.445);
+            margin: 200px auto;
+            width: 80%;
+            text-transform: uppercase;
+            overflow-y: auto;
+            font-weight: 700;
+        }
+    </style>
 </head>
 
 <body>
-
+    <div class="container">
+        <div id="text"></div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
